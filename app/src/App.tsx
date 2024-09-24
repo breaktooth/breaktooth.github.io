@@ -13,6 +13,7 @@ import {
   ListItemText,
   Container,
   Button,
+  Link,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import DownloadIcon from "@mui/icons-material/Download";
@@ -162,6 +163,50 @@ export default function App(props: Props) {
             content="If you discover any bugs, vulnerabilities, or potential for misuse in Breaktooth, please report them to k_kimura@stu.kobe-u.ac.jp following responsible disclosure practices. By downloading, installing, or using Breaktooth, you acknowledge that you have read, understood, and agree to abide by these ethical guidelines."
           />
         </Box>
+        <Box id="references" sx={{ mb: 6 }}>
+          <Typography variant="h4" gutterBottom>
+            3. References
+          </Typography>
+          <Section
+            title="3.1. ePrint"
+            content=""
+            bulletPoints={[
+              <React.Fragment key="eprint">
+                Keiichiro KIMURA, Hiroki KUZUNO, Yoshiaki SHIRAISHI ans Masakatu
+                MORII. "Breaktooth: Breaking Bluetooth Sessions Abusing
+                Power-Saving Mode" Cryptology ePrint Archive, Paper 2024/900.
+                2024.
+                <Link
+                  href="https://eprint.iacr.org/2024/900"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ color: "#4CAF50", ml: 1 }}
+                >
+                  https://eprint.iacr.org/2024/900
+                </Link>
+              </React.Fragment>,
+            ]}
+          />
+          <Section
+            title="3.2. MISC"
+            content=""
+            bulletPoints={[
+              <React.Fragment key="misc">
+                Keiichiro KIMURA, Hiroki KUZUNO, Yoshiaki SHIRAISHI ans Masakatu
+                MORII. "Bluetooth省電力モードを用いるデバイスハイジャック攻撃"
+                第106回CSEC研究会. 2024.
+                <Link
+                  href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=237288&item_no=1&page_id=13&block_id=8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ color: "#4CAF50", ml: 1 }}
+                >
+                  https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=237288&item_no=1&page_id=13&block_id=8
+                </Link>
+              </React.Fragment>,
+            ]}
+          />
+        </Box>
       </Container>
     </Box>
   );
@@ -170,7 +215,7 @@ export default function App(props: Props) {
 interface SectionProps {
   title: string;
   content: string;
-  bulletPoints?: string[];
+  bulletPoints?: React.ReactNode[];
 }
 
 function Section({ title, content, bulletPoints }: SectionProps) {
