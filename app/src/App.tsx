@@ -172,7 +172,7 @@ export default function App(props: Props) {
             content=""
             bulletPoints={[
               <React.Fragment key="eprint">
-                Keiichiro KIMURA, Hiroki KUZUNO, Yoshiaki SHIRAISHI ans Masakatu
+                Keiichiro KIMURA, Hiroki KUZUNO, Yoshiaki SHIRAISHI and Masakatu
                 MORII. "Breaktooth: Breaking Bluetooth Sessions Abusing
                 Power-Saving Mode" Cryptology ePrint Archive, Paper 2024/900.
                 2024.
@@ -192,7 +192,7 @@ export default function App(props: Props) {
             content=""
             bulletPoints={[
               <React.Fragment key="misc">
-                Keiichiro KIMURA, Hiroki KUZUNO, Yoshiaki SHIRAISHI ans Masakatu
+                Keiichiro KIMURA, Hiroki KUZUNO, Yoshiaki SHIRAISHI and Masakatu
                 MORII. "Bluetooth省電力モードを用いるデバイスハイジャック攻撃"
                 第106回CSEC研究会. 2024.
                 <Link
