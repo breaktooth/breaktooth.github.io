@@ -163,12 +163,24 @@ export default function App(props: Props) {
             content="If you discover any bugs, vulnerabilities, or potential for misuse in Breaktooth, please report them to k_kimura@stu.kobe-u.ac.jp following responsible disclosure practices. By downloading, installing, or using Breaktooth, you acknowledge that you have read, understood, and agree to abide by these ethical guidelines."
           />
         </Box>
+        <Box id="disclosure" sx={{ mb: 6 }}>
+          <Typography variant="h4" gutterBottom>
+            3. Responsible Disclosure
+          </Typography>
+          <Typography variant="body1" sx={{ mb: 2 }}>
+            This work investigates unknown threats to widespread technologies
+            and proposes defenses. All experiments were conducted inhouse; no
+            external devices were attacked. We responsibly disclosed our
+            findings to the Bluetooth SIG in May 2024. We also proposed the
+            patch for the findings
+          </Typography>
+        </Box>
         <Box id="references" sx={{ mb: 6 }}>
           <Typography variant="h4" gutterBottom>
-            3. References
+            4. References
           </Typography>
           <Section
-            title="3.1. ePrint"
+            title="4.1. Preprint"
             content=""
             bulletPoints={[
               <React.Fragment key="eprint">
@@ -188,20 +200,47 @@ export default function App(props: Props) {
             ]}
           />
           <Section
-            title="3.2. MISC"
+            title="4.2. MISC"
             content=""
             bulletPoints={[
               <React.Fragment key="misc">
                 Keiichiro KIMURA, Hiroki KUZUNO, Yoshiaki SHIRAISHI and Masakatu
-                MORII. "Bluetooth省電力モードを用いるデバイスハイジャック攻撃"
-                第106回CSEC研究会. 2024.
+                MORII. "Device Hijack Attacks Abusing Bluetooth Power-Saving
+                Mode" CSEC. 2024.
                 <Link
-                  href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=237288&item_no=1&page_id=13&block_id=8"
+                  href="http://id.nii.ac.jp/1001/00237168/"
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{ color: "#4CAF50", ml: 1 }}
                 >
-                  https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=237288&item_no=1&page_id=13&block_id=8
+                  http://id.nii.ac.jp/1001/00237168/
+                </Link>
+              </React.Fragment>,
+              <React.Fragment key="misc">
+                Keiichiro KIMURA, Hiroki KUZUNO, Yoshiaki SHIRAISHI and Masakatu
+                MORII. "A Proposed Link Key Hijacking Attack Using the
+                Power-Saving Mode against Bluetooth BR/EDR " ISEC. 2023.
+                <Link
+                  href="https://ken.ieice.org/ken/paper/20231110nCyv/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ color: "#4CAF50", ml: 1 }}
+                >
+                  https://ken.ieice.org/ken/paper/20231110nCyv/
+                </Link>
+              </React.Fragment>,
+              <React.Fragment key="misc">
+                Keiichiro KIMURA, Hiroki KUZUNO, Yoshiaki SHIRAISHI and Masakatu
+                MORII. "A New Attack Method on Bluetooth BR/EDR and Its
+                Demonstration Vulnerability of Power-Saving Mode and Its Threat"
+                CSS2023. 2023.
+                <Link
+                  href="http://id.nii.ac.jp/1001/00228658/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ color: "#4CAF50", ml: 1 }}
+                >
+                  http://id.nii.ac.jp/1001/00228658/
                 </Link>
               </React.Fragment>,
             ]}
