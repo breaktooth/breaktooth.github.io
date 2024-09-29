@@ -3762,7 +3762,7 @@ css-loader@^6.5.1:
   integrity sha512-CTJ+AEQJjq5NzLga5pE39qdiSV56F8ywCIsqNIRF0r7BDgWsN25aazToqAFg7ZrtA/U016xudB3ffgweORxX7g==
   dependencies:
     icss-utils "^5.1.0"
-    postcss "^8.4.33"
+    postcss "^8.4.31"
     postcss-modules-extract-imports "^3.1.0"
     postcss-modules-local-by-default "^4.0.5"
     postcss-modules-scope "^3.2.0"
@@ -7983,7 +7983,7 @@ postcss@^7.0.35:
     source-map "^0.6.1"
 
 postcss@^8.4.31:
-  version "8.4.38"
+  version "8.4.31"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.38.tgz#b387d533baf2054288e337066d81c6bee9db9e0e"
   integrity sha512-Wglpdk03BSfXkHoQa3b/oulrotAkwrlLDRSOb9D0bN86FdRyE9lppSp33aHNPgBa0JKCoB+drFLZkQoRRYae5A==
   dependencies:
@@ -9244,7 +9244,7 @@ tailwindcss@^3.0.2:
     normalize-path "^3.0.0"
     object-hash "^3.0.0"
     picocolors "^1.0.0"
-    postcss "^8.4.23"
+    postcss "^8.4.31"
     postcss-import "^15.1.0"
     postcss-js "^4.0.1"
     postcss-load-config "^4.0.1"
