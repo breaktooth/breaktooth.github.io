@@ -194,7 +194,7 @@ export default function App(props: Props) {
                   rel="noopener noreferrer"
                   sx={{ color: "#4CAF50", ml: 1 }}
                 >
-                  https://eprint.iacr.org/2024/900
+                  eprint.iacr.org/2024/900
                 </Link>
               </React.Fragment>,
             ]}
@@ -213,7 +213,7 @@ export default function App(props: Props) {
                   rel="noopener noreferrer"
                   sx={{ color: "#4CAF50", ml: 1 }}
                 >
-                  http://id.nii.ac.jp/1001/00237168/
+                  id.nii.ac.jp/1001/00237168/
                 </Link>
               </React.Fragment>,
               <React.Fragment key="misc">
@@ -226,7 +226,7 @@ export default function App(props: Props) {
                   rel="noopener noreferrer"
                   sx={{ color: "#4CAF50", ml: 1 }}
                 >
-                  https://ken.ieice.org/ken/paper/20231110nCyv/
+                  ken.ieice.org/ken/paper/20231110nCyv/
                 </Link>
               </React.Fragment>,
               <React.Fragment key="misc">
@@ -240,7 +240,7 @@ export default function App(props: Props) {
                   rel="noopener noreferrer"
                   sx={{ color: "#4CAF50", ml: 1 }}
                 >
-                  http://id.nii.ac.jp/1001/00228658/
+                  id.nii.ac.jp/1001/00228658/
                 </Link>
               </React.Fragment>,
             ]}
