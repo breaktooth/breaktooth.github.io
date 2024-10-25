@@ -175,12 +175,44 @@ export default function App(props: Props) {
             patch for the findings
           </Typography>
         </Box>
+        <Box id="demo" sx={{ mb: 6 }}>
+          <Typography variant="h4" gutterBottom>
+            4. Demo
+          </Typography>
+          <Typography variant="body1" sx={{ mb: 2 }}>
+            Below is a demonstration of the Breaktooth attack:
+          </Typography>
+          <Box
+            sx={{
+              position: "relative",
+              paddingBottom: "56.25%", // 16:9 aspect ratio
+              height: 0,
+              overflow: "hidden",
+              maxWidth: "100%",
+              mb: 3,
+            }}
+          >
+            <iframe
+              src="https://drive.google.com/file/d/1wNOvnhg-UD_8p7cxAVXGzTEe6mjTSq9C/preview"
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                border: "none",
+              }}
+              allow="autoplay"
+              title="breaktooth attack demo"
+            />
+          </Box>
+        </Box>
         <Box id="references" sx={{ mb: 6 }}>
           <Typography variant="h4" gutterBottom>
-            4. References
+            5. References
           </Typography>
           <Section
-            title="4.1. Preprint"
+            title="5.1. Preprint"
             content=""
             bulletPoints={[
               <React.Fragment key="eprint">
@@ -200,7 +232,7 @@ export default function App(props: Props) {
             ]}
           />
           <Section
-            title="4.2. MISC"
+            title="5.2. MISC"
             content=""
             bulletPoints={[
               <React.Fragment key="misc">
