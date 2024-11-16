@@ -15,6 +15,7 @@ import {
   Button,
   Link,
 } from "@mui/material";
+import TerminalIcon from "@mui/icons-material/Terminal";
 import MenuIcon from "@mui/icons-material/Menu";
 import DownloadIcon from "@mui/icons-material/Download";
 import { HOME_TITLE } from "./domain/const";
@@ -93,11 +94,12 @@ export default function App(props: Props) {
       <Container component="main" sx={{ mt: 8, mb: 4 }}>
         <Toolbar />
         <Box id="logo" sx={{ mb: 4, textAlign: "center" }}>
-          <img
+          {/* <img
             src="/breaktooth_logo.png"
             alt="Breaktooth Logo"
             style={{ maxWidth: "100%", height: "auto" }}
-          />
+          /> */}
+          <BreaktoothLogo />
         </Box>
         <Box id="poc" sx={{ mb: 6 }}>
           <Typography variant="h4" gutterBottom>
@@ -132,52 +134,9 @@ export default function App(props: Props) {
             apply to audio devices and re-release it.
           </Typography>
         </Box>
-        <Box id="ethics" sx={{ mb: 6 }}>
-          <Typography variant="h4" gutterBottom>
-            2. Ethical Guidelines for Breaktooth
-          </Typography>
-          <Section
-            title="2.1. Purpose and Intended Use"
-            content="Breaktooth is designed for educational and security research purposes only. It is intended to be used by cybersecurity professionals, penetration testers, and network administrators to assess and improve the security of systems and networks with explicit permission."
-          />
-          <Section
-            title="2.2. Responsible Use"
-            content="Users of this tool agree to:"
-            bulletPoints={[
-              "Only use Breaktooth on systems and networks they own or have explicit written permission to test.",
-              "Comply with all applicable local, state, and federal laws and regulations.",
-              "Report any vulnerabilities discovered to the appropriate parties responsibly.",
-              "Not use this tool for any malicious, harmful, or illegal activities.",
-            ]}
-          />
-          <Section
-            title="2.3. Disclaimer"
-            content="The creators and distributors of Breaktooth are not responsible for any misuse, damage, or legal consequences resulting from the use of this tool. Users assume all risks and liabilities associated with its use."
-          />
-          <Section
-            title="2.4. Ethical Considerations"
-            content="We strongly encourage users to consider the ethical implications of their actions when using Breaktooth. Always prioritize the security and privacy of individuals and organizations, and use this tool to promote better cybersecurity practices."
-          />
-          <Section
-            title="2.5. Feedback and Responsible Disclosure"
-            content="If you discover any bugs, vulnerabilities, or potential for misuse in Breaktooth, please report them to k_kimura@stu.kobe-u.ac.jp following responsible disclosure practices. By downloading, installing, or using Breaktooth, you acknowledge that you have read, understood, and agree to abide by these ethical guidelines."
-          />
-        </Box>
-        <Box id="disclosure" sx={{ mb: 6 }}>
-          <Typography variant="h4" gutterBottom>
-            3. Responsible Disclosure
-          </Typography>
-          <Typography variant="body1" sx={{ mb: 2 }}>
-            This work investigates unknown threats to widespread technologies
-            and proposes defenses. All experiments were conducted inhouse; no
-            external devices were attacked. We responsibly disclosed our
-            findings to the Bluetooth SIG in May 2024. We also proposed the
-            patch for the findings
-          </Typography>
-        </Box>
         <Box id="demo" sx={{ mb: 6 }}>
           <Typography variant="h4" gutterBottom>
-            4. Demo
+            2. Demo
           </Typography>
           <Typography variant="body1" sx={{ mb: 2 }}>
             Below is a demonstration of the Breaktooth attack:
@@ -206,6 +165,49 @@ export default function App(props: Props) {
               title="breaktooth attack demo"
             />
           </Box>
+        </Box>
+        <Box id="ethics" sx={{ mb: 6 }}>
+          <Typography variant="h4" gutterBottom>
+            3. Ethical Guidelines for Breaktooth
+          </Typography>
+          <Section
+            title="3.1. Purpose and Intended Use"
+            content="Breaktooth is designed for educational and security research purposes only. It is intended to be used by cybersecurity professionals, penetration testers, and network administrators to assess and improve the security of systems and networks with explicit permission."
+          />
+          <Section
+            title="3.2. Responsible Use"
+            content="Users of this tool agree to:"
+            bulletPoints={[
+              "Only use Breaktooth on systems and networks they own or have explicit written permission to test.",
+              "Comply with all applicable local, state, and federal laws and regulations.",
+              "Report any vulnerabilities discovered to the appropriate parties responsibly.",
+              "Not use this tool for any malicious, harmful, or illegal activities.",
+            ]}
+          />
+          <Section
+            title="3.3. Disclaimer"
+            content="The creators and distributors of Breaktooth are not responsible for any misuse, damage, or legal consequences resulting from the use of this tool. Users assume all risks and liabilities associated with its use."
+          />
+          <Section
+            title="3.4. Ethical Considerations"
+            content="We strongly encourage users to consider the ethical implications of their actions when using Breaktooth. Always prioritize the security and privacy of individuals and organizations, and use this tool to promote better cybersecurity practices."
+          />
+          <Section
+            title="3.5. Feedback and Responsible Disclosure"
+            content="If you discover any bugs, vulnerabilities, or potential for misuse in Breaktooth, please report them to k_kimura@stu.kobe-u.ac.jp following responsible disclosure practices. By downloading, installing, or using Breaktooth, you acknowledge that you have read, understood, and agree to abide by these ethical guidelines."
+          />
+        </Box>
+        <Box id="disclosure" sx={{ mb: 6 }}>
+          <Typography variant="h4" gutterBottom>
+            4. Responsible Disclosure
+          </Typography>
+          <Typography variant="body1" sx={{ mb: 2 }}>
+            This work investigates unknown threats to widespread technologies
+            and proposes defenses. All experiments were conducted inhouse; no
+            external devices were attacked. We responsibly disclosed our
+            findings to the Bluetooth SIG in May 2024. We also proposed the
+            patch for the findings
+          </Typography>
         </Box>
         <Box id="references" sx={{ mb: 6 }}>
           <Typography variant="h4" gutterBottom>
@@ -310,6 +312,102 @@ function Section({ title, content, bulletPoints }: SectionProps) {
           ))}
         </List>
       )}
+    </Box>
+  );
+}
+
+function BreaktoothLogo() {
+  return (
+    <Box
+      sx={{
+        width: "100%",
+        bgcolor: "black",
+        color: "#00ff00",
+        p: 4,
+        borderRadius: 2,
+        fontFamily: "monospace",
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          mb: 2,
+        }}
+      >
+        <TerminalIcon sx={{ mr: 1 }} />
+        <Typography variant="body2" sx={{ fontFamily: "monospace" }}>
+          [root@breaktooth:~]# ./exploit.sh
+        </Typography>
+      </Box>
+
+      <pre
+        style={{
+          fontSize: "1rem",
+          lineHeight: "1.2",
+          overflow: "auto",
+          whiteSpace: "pre",
+          margin: 0,
+          marginBottom: "24px",
+        }}
+      >
+        {`____                 _    _              _   _     
+|  _ \\              | |  | |            | | | |    
+| |_) |_ __ ___  ___| | _| |_ ___   ___ | |_| |__  
+|  _ <| '__/ _ \\/ __| |/ / __/ _ \\ / _ \\| __| '_ \\ 
+| |_) | | |  __/ (__|   <| || (_) | (_) | |_| | | |
+|____/|_|  \\___|\\___|_|\\_\\\\__\\___/ \\___/ \\__|_| |_|`}
+      </pre>
+
+      <Box sx={{ textAlign: "center", mb: 4 }}>
+        <Typography
+          variant="h5"
+          sx={{
+            fontFamily: "monospace",
+            fontWeight: "bold",
+            mb: 2,
+          }}
+        >
+          Breaking Security & Privacy in Bluetooth Power-Saving Mode
+        </Typography>
+      </Box>
+
+      <Box
+        sx={{
+          "& > div": {
+            mb: 1.5,
+            fontSize: "1.0rem",
+            fontFamily: "monospace",
+            textAlign: "left",
+            pl: 2,
+          },
+        }}
+      >
+        <div>[*] Target: Bluetooth Sleep Mode</div>
+        <div>[*] Method: Session Hijacking</div>
+        <div>
+          [*] Impact: All CIA (Confidentiality, Integrity, Availability) Triad
+        </div>
+        <div>
+          [*] Targets: 17 Commercial Bluetooth Devices Successfully Exploited
+        </div>
+        <div>[*] Disclosure: Reported to Bluetooth SIG (May 2024)</div>
+        <div>[+] Attack Tool: Low-Cost and Reproducible Toolkit Ready</div>
+      </Box>
+
+      <Divider sx={{ my: 3, borderColor: "#00ff00" }} />
+
+      <Typography
+        variant="caption"
+        sx={{
+          display: "block",
+          fontFamily: "monospace",
+          color: "#666",
+        }}
+      >
+        {"> "}Disclaimer: Research purposes only. Responsible disclosure in
+        progress.
+      </Typography>
     </Box>
   );
 }
