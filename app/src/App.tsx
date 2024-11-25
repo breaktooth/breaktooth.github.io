@@ -19,6 +19,7 @@ import TerminalIcon from "@mui/icons-material/Terminal";
 import MenuIcon from "@mui/icons-material/Menu";
 import DownloadIcon from "@mui/icons-material/Download";
 import { HOME_TITLE } from "./domain/const";
+import SleepModePackets from "./components/SleepModePackets";
 
 interface Props {
   window?: () => Window;
@@ -280,6 +281,16 @@ export default function App(props: Props) {
             ]}
           />
         </Box>
+        <Box id="appendix" sx={{ mb: 6 }}>
+          <Typography variant="h4" gutterBottom>
+            6. Appendix
+          </Typography>
+          <Section
+            title="6.1. Vulnerable Bluetooth Sleep Mode Packets"
+            content=""
+          />
+        </Box>
+        <SleepModePackets />
       </Container>
     </Box>
   );
