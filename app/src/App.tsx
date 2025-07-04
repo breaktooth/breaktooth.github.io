@@ -280,15 +280,6 @@ export default function App(props: Props) {
             ]}
           />
         </Box>
-        <Box id="appendix" sx={{ mb: 6 }}>
-          <Typography variant="h4" gutterBottom>
-            6. Appendix
-          </Typography>
-          <Section
-            title="6.1. Vulnerable Bluetooth Sleep Mode Packets"
-            content=""
-          />
-        </Box>
       </Container>
     </Box>
   );
