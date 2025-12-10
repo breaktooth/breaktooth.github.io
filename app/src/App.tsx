@@ -117,7 +117,7 @@ export default function App(props: Props) {
           <Button
             variant="contained"
             startIcon={<DownloadIcon />}
-            href="https://drive.google.com/file/d/13SPIGO1AuhxTk-s1RFkENd7T5qWp2YbN/view?usp=sharing"
+            href="https://drive.google.com/file/d/1BQIA_s9HHm9x4aWMsJUwa2FVgeYWI1f4/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             sx={{
@@ -129,10 +129,6 @@ export default function App(props: Props) {
           >
             Download Breaktooth PoC Code
           </Button>
-          <Typography variant="body1" sx={{ mb: 2, mt: 2 }}>
-            This source code is v0.9.0. We plan to extend this tool to also
-            apply to audio devices and re-release it.
-          </Typography>
         </Box>
         <Box id="demo" sx={{ mb: 6 }}>
           <Typography variant="h4" gutterBottom>
@@ -214,16 +210,16 @@ export default function App(props: Props) {
             5. References
           </Typography>
           <Section
-            title="5.1. Preprint"
+            title="5.1. Journal Paper"
             content=""
             bulletPoints={[
-              <React.Fragment key="eprint">
+              <React.Fragment key="journal">
                 Keiichiro KIMURA, Hiroki KUZUNO, Yoshiaki SHIRAISHI and Masakatu
                 MORII. "Breaktooth: Breaking Bluetooth Sessions Abusing
-                Power-Saving Mode" Cryptology ePrint Archive, Paper 2024/900.
-                2024.
+                Power-Saving Mode" Journal of Information Processing, Vol.33, pp.523-536.
+                2025.
                 <Link
-                  href="https://eprint.iacr.org/2024/900"
+                  href="https://www.jstage.jst.go.jp/article/ipsjjip/33/0/33_523/_article"
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{ color: "#4CAF50", ml: 1 }}
@@ -237,6 +233,20 @@ export default function App(props: Props) {
             title="5.2. MISC"
             content=""
             bulletPoints={[
+              <React.Fragment key="misc">
+                Keiichiro KIMURA, Hiroki KUZUNO, Yoshiaki SHIRAISHI and Masakatu
+                MORII. "Breaktooth: Breaking Bluetooth Sessions Abusing
+                Power-Saving Mode" Cryptology ePrint Archive, Paper 2024/900.
+                2024.
+                <Link
+                  href="https://eprint.iacr.org/2024/900"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  sx={{ color: "#4CAF50", ml: 1 }}
+                >
+                  ipsjjip/33/0/33_523/_article
+                </Link>
+              </React.Fragment>,
               <React.Fragment key="misc">
                 Keiichiro KIMURA, Hiroki KUZUNO, Yoshiaki SHIRAISHI and Masakatu
                 MORII. "Device Hijack Attacks Abusing Bluetooth Power-Saving
