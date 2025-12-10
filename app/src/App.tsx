@@ -224,7 +224,7 @@ export default function App(props: Props) {
                   rel="noopener noreferrer"
                   sx={{ color: "#4CAF50", ml: 1 }}
                 >
-                  eprint.iacr.org/2024/900
+                  ipsjjip/33/0/33_523/_article
                 </Link>
               </React.Fragment>,
             ]}
@@ -244,7 +244,7 @@ export default function App(props: Props) {
                   rel="noopener noreferrer"
                   sx={{ color: "#4CAF50", ml: 1 }}
                 >
-                  ipsjjip/33/0/33_523/_article
+                  eprint.iacr.org/2024/900
                 </Link>
               </React.Fragment>,
               <React.Fragment key="misc">
